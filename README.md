@@ -32,12 +32,13 @@
 
 <p> Didalam folder / package model terdapat 1 file dengan nama daftar nilai. Dan didalam file tersebut telah terdapat beberapa function yang dibuat untuk menjalankan program tersebut.<p>
 <p>Berikut adalah isi dari file **daftar_nilai.py**<p>
-``` python
+
+```python
 from view.input_nilai import *
 
 data = {}
 
-# Menambahkan data
+Menambahkan data
 
 def tambah_data():
 global data
@@ -56,7 +57,7 @@ ulangi = (input('tambah data?(y/t) : '))
             print('\nData berhasil di tambah!')
             return data
 
-# Mengubah data
+Mengubah data
 
 def ubah_data():
 nama = input("Masukan nama untuk mengubah data: ")
@@ -95,7 +96,7 @@ print("\nBerhasil ubah data!")
     else:
         print("'{}' Tidak ditemukan.".format(nama))
 
-# Menghapus data
+Menghapus data
 
 def hapus_data():
 nama = input("Masukan nama untuk menghapus data : ")
@@ -105,8 +106,7 @@ print("\nData '{}' berhasil dihapus.".format(nama))
 else:
 print("'{}' Tidak ditemukan.".format(nama))
 
-# Mencari data
-
+Mencari data
 def cari_data():
 print("Mencari data: ")
 print("=================================================")
@@ -121,14 +121,14 @@ print("| {0:14} | {1:9} | {2:5} | {3:5} | {4:5} | {5:5}"
 print('--------------------------------------------------------------')
 else:
 print("'{}' Tidak ditemukan.".format(nama))
+```
 
-````
+- Disisi lain saya membuat folder / package view yang berisi file input_nilai.py dan view_nilai.py<br>
 
-* Disisi lain saya membuat folder / package view yang berisi file input_nilai.py dan view_nilai.py<br>
+- Berikut adalah isi dari file **input_nilai.py** :
 
-* Berikut adalah isi dari file **input_nilai.py** : <br>
 ```python
-# Menginput data
+Menginput data
 def input_nama():
     print("\nMasukkan data mahasiswa")
     global nama
@@ -165,7 +165,7 @@ def nakhir():
     global nilai_akhir
     nilai_akhir = (nilai_tugas)*30/100 + (nilai_uts)*35/100 + (nilai_uas)*35/100
     return nilai_akhir
-````
+```
 
 - Berikut adalah isi dari file **view_nilai.py** : <br>
 
