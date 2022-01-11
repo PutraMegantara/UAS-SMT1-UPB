@@ -30,8 +30,8 @@
 
 ![102](ss/modul.png)
 
-<p> Didalam folder / package model terdapat 1 file dengan nama daftar nilai. Dan didalam file tersebut telah terdapat beberapa function yang dibuat untuk menjalankan program tersebut.<p>
-<p>Berikut adalah isi dari file **daftar_nilai.py**<p>
+- Didalam folder / package model terdapat 1 file dengan nama daftar nilai. Dan didalam file tersebut telah terdapat beberapa function yang dibuat untuk menjalankan program tersebut.<br>
+- Berikut adalah isi dari file **daftar_nilai.py**
 
 ```python
 from view.input_nilai import *
